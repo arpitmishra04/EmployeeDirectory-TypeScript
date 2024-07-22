@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/addRole.css" />
+    <link rel="stylesheet" href="../Assets/font-icon/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Add Employee</title>
+  </head>
+  <body>
+    <main>
+      <section id="sidebar">
+        <div id="hehe">
+          <div class="tezo-logo">
+            <a href="employee.html"
+              ><img src="../Assets/Images/TezoLogo.png" alt="Tezo Logo"
+            /></a>
+          </div>
+          <img id="handle" src="../Assets/Images/handle.png" alt="" />
+        </div>
+
+        <div class="menu">
+          <p id="menu-desc">ALL</p>
+          <div id="sidebar-menu-dashboard" class="sidebar-menu-item">
+            <img src="../Assets/Images/Horizontal nav/Dashboard.svg" alt="" />
+            <p>Dashboard</p>
+          </div>
+          <a href="../HTML/employee.html">
+            <div id="employee-option-container">
+              <div id="sidebar-menu-employees" class="sidebar-menu-item">
+                <img src="../Assets/Images/roles/Employees.svg" alt="" />
+                <p>Employees</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="menu">
+          <p id="menu-desc">Role/User Management</p>
+          <div id="employee-option-container">
+            <div id="sidebar-menu-roles" class="sidebar-menu-item">
+              <img src="../Assets/Images/roles/Roles.svg" alt="" />
+              <p>Roles</p>
+            </div>
+            <div id="tab-indicator"></div>
+          </div>
+
+          <div id="sidebar-menu-access" class="sidebar-menu-item">
+            <img src="../Assets/Images/Horizontal nav/assign user.svg" alt="" />
+            <p>Access Rights</p>
+          </div>
+        </div>
+
+        <div id="update-message">
+          <h5>Install new update 2.3.1A</h5>
+          <p>Allow to launch the new update for the AD application</p>
+          <div id="update-message-btn-container">
+            <button id="dismiss-btn" class="update-message-btn">Dismiss</button>
+            <button id="accept-btn" class="update-message-btn">Accept</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="content">
+        <div class="search">
+          <img
+            id="search-icon"
+            src="../Assets/Images/bx-search.png"
+            alt="Search Icon"
+          />
+          <input type="search" class="search-input" placeholder="Search" />
+
+          <span id="icon-menu-container">
+            <img
+              class="menu-icon"
+              src="../Assets/Images/Vertical Navbar/Language.svg"
+              alt=""
+            />
+            <img
+              class="menu-icon"
+              src="../Assets/Images/Vertical Navbar/Categories.svg"
+              alt=""
+            />
+            <img
+              class="menu-icon"
+              src="../Assets/Images/Vertical Navbar/Mode.svg"
+              alt=""
+            />
+            <img
+              id="notifications-icon"
+              class="menu-icon"
+              src="../Assets/Images/Vertical Navbar/Notifications.svg"
+              alt=""
+            />
+          </span>
+
+          <div id="profile">
+            <img
+              class="profile-image"
+              src="../Assets/Images/jhon abraham.jpg"
+              alt=""
+            />
+            <div id="user-status"></div>
+
+            <div id="profile-text-container">
+              <p id="profile-name">Jhon Abraham</p>
+              <p id="profile-designation">Admin</p>
+            </div>
+            <select name="profile-dropdown" id="profile-dropdown"></select>
+          </div>
+        </div>
+
+        <!-- Add Role Section -->
+        <div class="add-role-section">
+          <form id="add-role-form">
+            <h3>Create New Role</h3>
+
+            <div class="role-department-section">
+              <div class="form-element">
+                <label for="role-name">Role Name</label>
+                <input type="text" id="role-name" placeholder="Text" />
+              </div>
+
+              <div class="form-element">
+                <label for="department">Department</label>
+                <select id="department">
+                  <option value="Product Engg">Product Engg</option>
+                  <option value="Data Analysis">Data Analysis</option>
+                  <option value="Quality Assurance">Quality Assurance</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-element">
+              <label for="role-description">Description</label>
+              <textarea
+                id="role-description"
+                placeholder="Text"
+                rows="10"
+                style="resize: none"
+              ></textarea>
+            </div>
+
+            <div class="form-element select">
+              <label for="location">Location</label>
+              <select id="location">
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Delhi">Delhi</option>
+              </select>
+            </div>
+
+            <div class="form-element select">
+              <label for="Assign Employees">Assign Employees</label>
+              <input type="text" id="assign-employees" placeholder="Search" />
+              <div class="dropdown-content">
+                <label class="emp-dropdown"
+                  ><img
+                    src="../Assets/Images/user.png"
+                    alt="Employee 2" />Employee 1<input
+                    class="checkbox"
+                    type="checkbox"
+                    value="1"
+                /></label>
+                <label class="emp-dropdown"
+                  ><img
+                    src="../Assets/Images/user2.png"
+                    alt="Employee 2" />Employee 2<input
+                    type="checkbox"
+                    value="2"
+                /></label>
+              </div>
+            </div>
+            <div class="form-buttons">
+              <input id="cancel" type="button" value="Cancel" />
+              <input id="submit" type="submit" value="Add Role" />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="../Dist/sidebar.js"></script>
+    <script src="../Dist/addRole.js"></script>
+  </body>
+</html>

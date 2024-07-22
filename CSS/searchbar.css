@@ -1,0 +1,100 @@
+.search {
+  position: relative;
+  width: 98%;
+  height: 10vh;
+  margin-top: 0.5%;
+  margin-left: 2%;
+}
+
+.search-input {
+  width: 100%;
+  height: 100%;
+  border-style: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgb(202, 202, 202);
+}
+
+::placeholder {
+  padding-left: 4%;
+  font-size: 1.2vw;
+  opacity: 0.5;
+}
+
+#search-icon {
+  position: absolute;
+  width: 2%;
+  left: 1.5%;
+  top: 32%;
+}
+
+#icon-menu-container {
+  position: absolute;
+  left: 63%;
+  top: 12%;
+}
+
+#notifications-icon {
+  margin-top: -1%;
+}
+.menu-icon {
+  width: 3.5vw;
+}
+
+#profile {
+  display: flex;
+  position: absolute;
+  right: 2%;
+  top: 15%;
+  width: 13%;
+}
+
+#profile-text-container p {
+  margin-top: 4%;
+  margin-bottom: 0%;
+  white-space: nowrap;
+}
+
+.profile-image {
+  position: relative;
+  margin-top: 0%;
+  width: 28%;
+  border-radius: 100%;
+}
+
+#user-status {
+  width: 6%;
+  height: 23%;
+  border-radius: 50%;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  background-color: green;
+  position: absolute;
+  top: 79%;
+  left: 18%;
+}
+
+#profile-text-container {
+  margin-left: 4%;
+}
+
+#profile-name {
+  font-size: 0.8vw;
+  font-weight: 600;
+}
+#profile-designation {
+  font-size: 0.9vw;
+  font-weight: 800;
+}
+
+#profile-dropdown {
+  position: absolute;
+  /* height: 57%; */
+  width: 1vw;
+  /* margin-left: 4%; */
+  font-size: 2vw;
+  /* margin-top: -7%; */
+  margin-bottom: 10%;
+  right: 0%;
+  border-style: none;
+}

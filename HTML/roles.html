@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="../CSS/searchbar.css" /> -->
+    <link rel="stylesheet" href="../Assets/font-icon/style.css" />
+    <link rel="stylesheet" href="../CSS/roles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Roles</title>
+  </head>
+  <body>
+    <main>
+      <section id="sidebar">
+        <div id="hehe">
+          <div class="tezo-logo">
+            <a href="employee.html"
+              ><img src="../Assets/Images/TezoLogo.png" alt="Tezo Logo"
+            /></a>
+          </div>
+          <img id="handle" src="../Assets/Images/handle.png" alt="" />
+        </div>
+
+        <div class="menu">
+          <p id="menu-desc">ALL</p>
+          <div id="sidebar-menu-dashboard" class="sidebar-menu-item">
+            <img src="../Assets/Images/Horizontal nav/Dashboard.svg" alt="" />
+            <p>Dashboard</p>
+          </div>
+          <a href="../HTML/employee.html">
+            <div id="employee-option-container">
+              <div id="sidebar-menu-employees" class="sidebar-menu-item">
+                <img src="../Assets/Images/roles/Employees.svg" alt="" />
+                <p>Employees</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="menu">
+          <p id="menu-desc">Role/User Management</p>
+          <div id="employee-option-container">
+            <div id="sidebar-menu-roles" class="sidebar-menu-item">
+              <img src="../Assets/Images/roles/Roles.svg" alt="" />
+              <p>Roles</p>
+            </div>
+            <div id="tab-indicator"></div>
+          </div>
+
+          <div id="sidebar-menu-access" class="sidebar-menu-item">
+            <img src="../Assets/Images/Horizontal nav/assign user.svg" alt="" />
+            <p>Access Rights</p>
+          </div>
+        </div>
+
+        <div id="update-message">
+          <h5>Install new update 2.3.1A</h5>
+          <p>Allow to launch the new update for the AD application</p>
+          <div id="update-message-btn-container">
+            <button id="dismiss-btn" class="update-message-btn">Dismiss</button>
+            <button id="accept-btn" class="update-message-btn">Accept</button>
+          </div>
+        </div>
+      </section>
+      <section id="content">
+        <div class="search">
+          <img
+            id="search-icon"
+            src="../Assets/Images/bx-search.png"
+            alt="Search Icon"
+          />
+          <input type="search" class="search-input" placeholder="Search" />
+
+          <span id="icon-menu-container">
+            <img
+              class="menu-icon"
+              src="../Assets/Images/Vertical Navbar/Language.svg"
+              alt=""
+            />
+            <img
+              class="menu-icon"
+              src="../Assets/Images/Vertical Navbar/Categories.svg"
+              alt=""
+            />
+            <img
+              class="menu-icon"
+              src="../Assets/Images/Vertical Navbar/Mode.svg"
+              alt=""
+            />
+            <img
+              id="notifications-icon"
+              class="menu-icon"
+              src="../Assets/Images/Vertical Navbar/Notifications.svg"
+              alt=""
+            />
+          </span>
+
+          <div id="profile">
+            <img
+              class="profile-image"
+              src="../Assets/Images/jhon abraham.jpg"
+              alt=""
+            />
+            <div id="user-status"></div>
+
+            <div id="profile-text-container">
+              <p id="profile-name">Jhon Abraham</p>
+              <p id="profile-designation">Admin</p>
+            </div>
+            <select name="profile-dropdown" id="profile-dropdown"></select>
+          </div>
+        </div>
+
+        <div id="content-employee">
+          <div id="content-employee-title">
+            <h4>Roles</h4>
+            <p>All the roles are configured here.</p>
+          </div>
+
+          <div class="employee-operation">
+            <button
+              id="add-employee-btn"
+              onclick="location.href ='addRole.html';"
+            >
+              <img
+                id="add-employee-icon"
+                src="../Assets/Images/Interface/Add.svg"
+              />ADD ROLE
+            </button>
+          </div>
+        </div>
+
+        <div class="employee-filter-categories">
+          <div class="filter-categories">
+            <p>Filter</p>
+            <div id="dropdown-options">
+              <select
+                name="department"
+                title="department"
+                id="department-dropdown"
+              >
+                <option selected disabled hidden>Department</option>
+              </select>
+
+              <select name="location" title="location" id="location-dropdown">
+                <option selected disabled hidden>Location</option>
+              </select>
+            </div>
+            <div class="employee-filter-btn-container">
+              <button id="reset">Reset</button>
+              <button id="apply">Apply</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <div class="card__content">
+              <div class="card__info">
+                <h4>Customer Service Manager</h4>
+                <img src="../Assets/Images/edit.svg" alt="edit-icon" />
+              </div>
+              <div class="card__info">
+                <img
+                  id="department-logo"
+                  src="../Assets/Images/department-logo.svg"
+                  alt="department logo"
+                />
+                <p id="department-txt" class="">Department</p>
+                <p class="right-content">IT</p>
+              </div>
+              <div class="card__info">
+                <img
+                  id="location-logo"
+                  src="../Assets/Images/location-logo.svg"
+                  alt="department logo"
+                />
+                <p id="location-txt" class="">Location</p>
+                <p class="right-content">Hyderabad</p>
+              </div>
+              <div class="card__info">
+                <p class="">Total Employees</p>
+                <div class="stack-employee-icon-container">
+                  <img
+                    id="stack-img-1"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                  <img
+                    id="stack-img-2"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                  <img
+                    id="stack-img-3"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                  <img
+                    id="stack-img-4"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                  <div id="stack-img-5" src="../Assets/Images/user.png" alt="">
+                    <p>+43</p>
+                  </div>
+                </div>
+              </div>
+              <div id="all-employee-btn-container">
+                <a href="../HTML/roleDetails.html">
+                  <div id="view-all-employee">
+                    <p>
+                      View all Employees
+                      <img
+                        src="../Assets/Images/arrow-right.svg"
+                        alt="arrow right"
+                      />
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__content">
+              <div class="card__info">
+                <h4>UX Designer</h4>
+                <img src="../Assets/Images/edit.svg" alt="edit-icon" />
+              </div>
+              <div class="card__info">
+                <img
+                  id="department-logo"
+                  src="../Assets/Images/department-logo.svg"
+                  alt="department logo"
+                />
+                <p id="department-txt" class="">Department</p>
+                <p class="right-content">Product Engg.</p>
+              </div>
+              <div class="card__info">
+                <img
+                  id="location-logo"
+                  src="../Assets/Images/location-logo.svg"
+                  alt="department logo"
+                />
+                <p id="location-txt" class="">Location</p>
+                <p class="right-content">Hyderabad</p>
+              </div>
+              <div class="card__info">
+                <p class="">Total Employees</p>
+                <div class="stack-employee-icon-container">
+                  <img
+                    id="stack-img-1"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                  <img
+                    id="stack-img-2"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                  <img
+                    id="stack-img-3"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                  <img
+                    id="stack-img-4"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                  <div id="stack-img-5" src="../Assets/Images/user.png" alt="">
+                    <p>+43</p>
+                  </div>
+                </div>
+              </div>
+              <div id="all-employee-btn-container">
+                <a href="../HTML/roleDetails.html">
+                  <div id="view-all-employee">
+                    <p>
+                      View all Employees
+                      <img
+                        src="../Assets/Images/arrow-right.svg"
+                        alt="arrow right"
+                      />
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__content">
+              <div class="card__info">
+                <h4>Assistant Backend Developer</h4>
+                <img src="../Assets/Images/edit.svg" alt="edit-icon" />
+              </div>
+              <div class="card__info">
+                <img
+                  id="department-logo"
+                  src="../Assets/Images/department-logo.svg"
+                  alt="department logo"
+                />
+                <p id="department-txt" class="">Department</p>
+                <p class="right-content">UIUX</p>
+              </div>
+              <div class="card__info">
+                <img
+                  id="location-logo"
+                  src="../Assets/Images/location-logo.svg"
+                  alt="department logo"
+                />
+                <p id="location-txt" class="">Location</p>
+                <p class="right-content">Hyderabad</p>
+              </div>
+              <div class="card__info">
+                <p class="">Total Employees</p>
+                <div class="stack-employee-icon-container">
+                  <img
+                    id="stack-img-1"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                  <img
+                    id="stack-img-2"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                  <img
+                    id="stack-img-3"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                  <img
+                    id="stack-img-4"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                  <div id="stack-img-5" src="../Assets/Images/user.png" alt="">
+                    <p>+43</p>
+                  </div>
+                </div>
+              </div>
+              <div id="all-employee-btn-container">
+                <a href="../HTML/roleDetails.html">
+                  <div id="view-all-employee">
+                    <p>
+                      View all Employees
+                      <img
+                        src="../Assets/Images/arrow-right.svg"
+                        alt="arrow right"
+                      />
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__content">
+              <div class="card__info">
+                <h4>Human Resource Manager</h4>
+                <img src="../Assets/Images/edit.svg" alt="edit-icon" />
+              </div>
+              <div class="card__info">
+                <img
+                  id="department-logo"
+                  src="../Assets/Images/department-logo.svg"
+                  alt="department logo"
+                />
+                <p id="department-txt" class="">Department</p>
+                <p class="right-content">IT</p>
+              </div>
+              <div class="card__info">
+                <img
+                  id="location-logo"
+                  src="../Assets/Images/location-logo.svg"
+                  alt="department logo"
+                />
+                <p id="location-txt" class="">Location</p>
+                <p class="right-content">Hyderabad</p>
+              </div>
+              <div class="card__info">
+                <p class="">Total Employees</p>
+                <div class="stack-employee-icon-container">
+                  <img
+                    id="stack-img-1"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                  <img
+                    id="stack-img-2"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                  <img
+                    id="stack-img-3"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                  <img
+                    id="stack-img-4"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                  <div id="stack-img-5" src="../Assets/Images/user.png" alt="">
+                    <p>+43</p>
+                  </div>
+                </div>
+              </div>
+              <div id="all-employee-btn-container">
+                <a href="../HTML/roleDetails.html">
+                  <div id="view-all-employee">
+                    <p>
+                      View all Employees
+                      <img
+                        src="../Assets/Images/arrow-right.svg"
+                        alt="arrow right"
+                      />
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__content">
+              <div class="card__info">
+                <h4>Frontend Developer</h4>
+                <img src="../Assets/Images/edit.svg" alt="edit-icon" />
+              </div>
+              <div class="card__info">
+                <img
+                  id="department-logo"
+                  src="../Assets/Images/department-logo.svg"
+                  alt="department logo"
+                />
+                <p id="department-txt" class="">Department</p>
+                <p class="right-content">Product Engg.</p>
+              </div>
+              <div class="card__info">
+                <img
+                  id="location-logo"
+                  src="../Assets/Images/location-logo.svg"
+                  alt="department logo"
+                />
+                <p id="location-txt" class="">Location</p>
+                <p class="right-content">Hyderabad</p>
+              </div>
+              <div class="card__info">
+                <p class="">Total Employees</p>
+                <div class="stack-employee-icon-container">
+                  <img
+                    id="stack-img-1"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                  <img
+                    id="stack-img-2"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                  <img
+                    id="stack-img-3"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                  <img
+                    id="stack-img-4"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                  <div id="stack-img-5" src="../Assets/Images/user.png" alt="">
+                    <p>+43</p>
+                  </div>
+                </div>
+              </div>
+              <div id="all-employee-btn-container">
+                <a href="../HTML/roleDetails.html">
+                  <div id="view-all-employee">
+                    <p>
+                      View all Employees
+                      <img
+                        src="../Assets/Images/arrow-right.svg"
+                        alt="arrow right"
+                      />
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__content">
+              <div class="card__info">
+                <h4>Senior Developer</h4>
+                <img src="../Assets/Images/edit.svg" alt="edit-icon" />
+              </div>
+              <div class="card__info">
+                <img
+                  id="department-logo"
+                  src="../Assets/Images/department-logo.svg"
+                  alt="department logo"
+                />
+                <p id="department-txt" class="">Department</p>
+                <p class="right-content">UIUX</p>
+              </div>
+              <div class="card__info">
+                <img
+                  id="location-logo"
+                  src="../Assets/Images/location-logo.svg"
+                  alt="department logo"
+                />
+                <p id="location-txt" class="">Location</p>
+                <p class="right-content">Hyderabad</p>
+              </div>
+              <div class="card__info">
+                <p class="">Total Employees</p>
+                <div class="stack-employee-icon-container">
+                  <img
+                    id="stack-img-1"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                  <img
+                    id="stack-img-2"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                  <img
+                    id="stack-img-3"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                  <img
+                    id="stack-img-4"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                  <div id="stack-img-5" src="../Assets/Images/user.png" alt="">
+                    <p>+43</p>
+                  </div>
+                </div>
+              </div>
+              <div id="all-employee-btn-container">
+                <a href="../HTML/roleDetails.html">
+                  <div id="view-all-employee">
+                    <p>
+                      View all Employees
+                      <img
+                        src="../Assets/Images/arrow-right.svg"
+                        alt="arrow right"
+                      />
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../Dist/sidebar.js"></script>
+  </body>
+</html>

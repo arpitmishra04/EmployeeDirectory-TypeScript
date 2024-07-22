@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/employee.css" />
+    <link rel="stylesheet" href="../Assets/font-icon/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Tezo</title>
+  </head>
+  <body>
+    <main>
+      <section id="sidebar">
+        <div id="hehe">
+          <div class="tezo-logo">
+            <a href="employee.html"
+              ><img src="../Assets/Images/TezoLogo.png" alt="Tezo Logo"
+            /></a>
+          </div>
+          <img id="handle" src="../Assets/Images/handle.png" alt="" />
+        </div>
+
+        <div class="menu">
+          <p id="menu-desc">ALL</p>
+          <div id="sidebar-menu-dashboard" class="sidebar-menu-item">
+            <img src="../Assets/Images/Horizontal nav/Dashboard.svg" alt="" />
+            <p>Dashboard</p>
+          </div>
+
+          <div id="employee-option-container">
+            <div id="sidebar-menu-employees" class="sidebar-menu-item">
+              <img src="../Assets/Images/Horizontal nav/Employees.svg" alt="" />
+              <p>Employees</p>
+            </div>
+            <div id="tab-indicator"></div>
+          </div>
+        </div>
+
+        <div class="menu">
+          <p id="menu-desc">Role/User Management</p>
+          <a href="roles.html">
+            <div id="sidebar-menu-role" class="sidebar-menu-item">
+              <img src="../Assets/Images/Horizontal nav/Roles.svg" alt="" />
+              <p>Roles</p>
+            </div>
+          </a>
+
+          <div id="sidebar-menu-access" class="sidebar-menu-item">
+            <img src="../Assets/Images/Horizontal nav/assign user.svg" alt="" />
+            <p>Access Rights</p>
+          </div>
+        </div>
+
+        <div id="update-message">
+          <h5>Install new update 2.3.1A</h5>
+          <p>Allow to launch the new update for the AD application</p>
+          <div id="update-message-btn-container">
+            <button id="dismiss-btn" class="update-message-btn">Dismiss</button>
+            <button id="accept-btn" class="update-message-btn">Accept</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="content">
+        <div class="search">
+          <img
+            id="search-icon"
+            src="../Assets/Images/bx-search.png"
+            alt="Search Icon"
+          />
+          <input type="search" class="search-input" placeholder="Search" />
+
+          <span id="icon-menu-container">
+            <img
+              class="menu-icon"
+              src="../Assets/Images/Vertical Navbar/Language.svg"
+              alt=""
+            />
+            <img
+              class="menu-icon"
+              src="../Assets/Images/Vertical Navbar/Categories.svg"
+              alt=""
+            />
+            <img
+              class="menu-icon"
+              src="../Assets/Images/Vertical Navbar/Mode.svg"
+              alt=""
+            />
+            <img
+              id="notifications-icon"
+              class="menu-icon"
+              src="../Assets/Images/Vertical Navbar/Notifications.svg"
+              alt=""
+            />
+          </span>
+
+          <div id="profile">
+            <img
+              class="profile-image"
+              src="../Assets/Images/jhon abraham.jpg"
+              alt=""
+            />
+            <div id="user-status"></div>
+
+            <div id="profile-text-container">
+              <p id="profile-name">Jhon Abraham</p>
+              <p id="profile-designation">Admin</p>
+            </div>
+            <select name="profile-dropdown" id="profile-dropdown"></select>
+          </div>
+        </div>
+
+        <div id="content-employee">
+          <div id="content-employee-title">
+            <h4>Employees</h4>
+            <p>
+              Find all of your comapny's employee accounts and their associated
+              roles.
+            </p>
+          </div>
+
+          <div class="employee-operation">
+            <button id="export-btn">
+              <img
+                id="export-icon"
+                src="../Assets/Images/Interface/Export.svg"
+              />EXPORT
+            </button>
+            <button
+              id="add-employee-btn"
+              onclick="location.href = 'addEmployee.html';"
+            >
+              <img
+                id="add-employee-icon"
+                src="../Assets/Images/Interface/Add.svg"
+              />ADD EMPLOYEEE
+            </button>
+          </div>
+        </div>
+
+        <div id="employee-filter">
+          <div class="filter-icon">
+            <img
+              id="filter-img"
+              src="../Assets/Images/Interface/filter.svg"
+              alt="filter-icon"
+            />
+          </div>
+
+          <div class="search-by-letter-container">
+            <script src="../Dist/filterByLetter.js"></script>
+          </div>
+        </div>
+
+        <div class="employee-filter-categories">
+          <div class="filter-categories">
+            <p>Filter</p>
+            <p id="count-selection"></p>
+            <div id="dropdown-options">
+              <div class="custom-dropdown" id="status-dropdown">
+                <p id="statusDropdownTxt">Status<i class="fa-solid fa-chevron-down"></i></p>
+                
+                <div class="dropdown-content">
+                  <input
+                    type="checkbox"
+                    id="status-active"
+                    value="Active"
+                    checked
+                  >Active</input>
+                  
+                
+                  <br />
+                  <input
+                    type="checkbox"
+                    id="status-inactive"
+                    value="Inactive"
+                    checked
+                  >Inactive</input>
+                  
+                  <br />
+                </div>
+              </div>
+              <div class="custom-dropdown" id="location-dropdown">
+                <p id="locationDropdownTxt">Location<i class="fa-solid fa-chevron-down"></i></p>
+                <div class="dropdown-content">
+                  <input
+                    type="checkbox"
+                    id="location-bangalore"
+                    value="Banglore"
+                    checked
+                  >Banglore</input>
+                 
+                  <br />
+                  <input
+                    type="checkbox"
+                    id="location-delhi"
+                    value="Delhi"
+                    checked
+                  >Delhi</input>
+                  
+                  <br />
+                  <input
+                    type="checkbox"
+                    id="location-hyderabad"
+                    value="Hyderabad"
+                    checked
+                  >Hyderabad</input>
+                  
+                  <br />
+                </div>
+              </div>
+              <div class="custom-dropdown" id="department-dropdown">
+                <p id="departmentDropdownTxt">Department<i class="fa-solid fa-chevron-down"></i></p>
+                <div class="dropdown-content">
+                  <input
+                    type="checkbox"
+                    id="department-product"
+                    value="Product Engg"
+                    checked
+                  >Product Engg</input>
+                  
+                  <br />
+                  <input
+                    type="checkbox"
+                    id="department-data"
+                    value="Data Analysis"
+                    checked
+                  >Data Analysis</input>
+                  
+                  <br />
+                  <input
+                    type="checkbox"
+                    id="department-quality"
+                    value="Quality Assurance"
+                    checked
+                  >Quality Assurance</input>
+                  
+                  <br />
+                </div>
+              </div>
+            </div>
+
+            <div class="employee-filter-btn-container">
+              <button id="reset" disabled="true">Reset</button>
+              <button id="apply" disabled="true">Apply</button>
+            </div>
+          </div>
+        </div>
+        
+        <div id="employee-data-table">
+          <div id="table-operations">
+            <img
+              id="arrow-left-down-img"
+              src="../Assets/Images/Interface/arrow-turn left -down.svg"
+              alt="arrow-turn-left-down"
+            />
+            <button id="delete-operation-btn">Delete</button>
+            <img
+              id="add-operation-img"
+              src="../Assets/Images/Interface/table-add.svg"
+              alt="add-row-img "
+            />
+          </div>
+          <div id="table-data">
+            <table id="table">
+              <thead>
+                <tr>
+                  <th><input type="checkbox" id="selectAll" /></th>
+                  <th id="1">
+                    USER<i class="fa-solid fa-sort"></i>
+                  </th>
+                  <th id="2">
+                    LOCATION<i class="fa-solid fa-sort"></i>
+                  </th>
+                  <th id="3">
+                    DEPARTMENT<i class="fa-solid fa-sort"></i>
+                  </th>
+                  <th id="4">
+                    ROLE<i class="fa-solid fa-sort"></i>
+                  </th>
+                  <th id="5">
+                    EMP NO<i class="fa-solid fa-sort"></i>
+                  </th>
+                  <th id="6">
+                    STATUS<i class="fa-solid fa-sort"></i>
+                  </th>
+                  <th id="7">
+                    JOIN DT<i class="fa-solid fa-sort"></i>
+                  </th>
+                  <th>&#8943;</th>
+                </tr>
+              </thead>
+
+              <tbody id="data-output">
+                <script src="../Dist/table.js"></script>
+                <script src="../Dist/tableSort.js"></script>
+                <script src="../Dist/filterByCategories.js"></script>
+              </tbody>
+            </table>
+            <div id="filter-status">NO DATA AVAILABLE</div>
+          </div>
+        </div>
+        <div id="toastBox"></div>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+    <script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
+    <script src="../Dist/sidebar.js"></script>
+    <script src="../Dist/export.js"></script>
+  </body>
+</html>

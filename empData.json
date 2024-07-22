@@ -1,0 +1,112 @@
+[
+  {
+    "user": "Arpit Mishra, ",
+    "userDetails": "Arpit@tezo.com",
+    "location": "Hyderabad",
+    "department": "Product Engg",
+    "role": "Full-stack Developer",
+    "empNo": "TZ002341",
+    "status": "Active",
+    "joinDt": "2023-03-12"
+  },
+  {
+    "user": "Anuj Dubey, ",
+    "userDetails": "anuj@tezo.com",
+    "location": "Banglore",
+    "department": "Product Engg",
+    "role": "Full-stack Developer",
+    "empNo": "TZ002342",
+    "status": "Inactive",
+    "joinDt": "2023-03-12"
+  },
+  {
+    "user": "Abhinav Dubey, ",
+    "userDetails": "abhi@tezo.com",
+    "location": "Hyderabad",
+    "department": "Product Engg",
+    "role": "Backend Developer",
+    "empNo": "TZ002343",
+    "status": "Active",
+    "joinDt": "2023-11-19"
+  },
+  {
+    "user": "Adarsh Dubey, ",
+    "userDetails": "adarsh@tezo.com",
+    "location": "Delhi",
+    "department": "Quality Assurance",
+    "role": "QA Lead",
+    "empNo": "TZ002344",
+    "status": "Active",
+    "joinDt": "2023-05-04"
+  },
+  {
+    "user": "Prasoon Mishra, ",
+    "userDetails": "prasoon@tezo.com",
+    "location": "Banglore",
+    "department": "Data Analysis",
+    "role": "Data Analyst",
+    "empNo": "TZ002345",
+    "status": "Active",
+    "joinDt": "2020-11-04"
+  },
+  {
+    "user": "Chris Wilson Tigga, ",
+    "userDetails": "chris@tezo.com",
+    "location": "Hyderabad",
+    "department": "Product Engg",
+    "role": "Full-stack Developer",
+    "empNo": "TZ002346",
+    "status": "Active",
+    "joinDt": "2022-04-06"
+  },
+  {
+    "user": "Ayush Sahu, ",
+    "userDetails": "ayush@tezo.com",
+    "location": "Noida",
+    "department": "Product Engg",
+    "role": "Full-stack Developer",
+    "empNo": "TZ002347",
+    "status": "Active",
+    "joinDt": "2020-09-12"
+  },
+  {
+    "user": "Anurag Agarwal, ",
+    "userDetails": "Anurag@tezo.com",
+    "location": "Pune",
+    "department": "Product Engg",
+    "role": "Backend Developer",
+    "empNo": "TZ002348",
+    "status": "Active",
+    "joinDt": "2018-06-18"
+  },
+  {
+    "user": "Karen woods, ",
+    "userDetails": "edgar@tezo.com",
+    "location": "London",
+    "department": "Product Engg",
+    "role": "Full-stack Developer",
+    "empNo": "TZ002349",
+    "status": "Inactive",
+    "joinDt": "2021-02-05"
+  },
+  {
+    "user": "Qusaab Muftaza, ",
+    "userDetails": "edgar@tezo.com",
+    "location": "London",
+    "department": "Product Engg",
+    "role": "Full-stack Developer",
+    "empNo": "TZ002350",
+    "status": "Active",
+    "joinDt": "2020-03-10"
+  },
+  {
+    "user": "Aron Finch, ",
+    "userDetails": "aron@tezo.com",
+    "location": "Sydney",
+    "department": "Product Engg",
+    "role": "Content Strategist",
+    "empNo": "TZ002351",
+    "status": "Inactive",
+    "joinDt": "2015-07-11"
+  }
+]

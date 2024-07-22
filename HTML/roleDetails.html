@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/searchbar.css" />
+    <link rel="stylesheet" href="../Assets/font-icon/style.css" />
+    <link rel="stylesheet" href="../CSS/roleDetails.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Role Details</title>
+  </head>
+  <body>
+    <main>
+      <section id="sidebar">
+        <div id="hehe">
+          <div class="tezo-logo">
+            <a href="employee.html"
+              ><img src="../Assets/Images/TezoLogo.png" alt="Tezo Logo"
+            /></a>
+          </div>
+          <img id="handle" src="../Assets/Images/handle.png" alt="" />
+        </div>
+
+        <div class="menu">
+          <p id="menu-desc">ALL</p>
+          <div id="sidebar-menu-dashboard" class="sidebar-menu-item">
+            <img src="../Assets/Images/Horizontal nav/Dashboard.svg" alt="" />
+            <p>Dashboard</p>
+          </div>
+          <a href="../HTML/employee.html">
+            <div id="employee-option-container">
+              <div id="sidebar-menu-employees" class="sidebar-menu-item">
+                <img src="../Assets/Images/roles/Employees.svg" alt="" />
+                <p>Employees</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="menu">
+          <p id="menu-desc">Role/User Management</p>
+          <div id="employee-option-container">
+            <div id="sidebar-menu-roles" class="sidebar-menu-item">
+              <img src="../Assets/Images/roles/Roles.svg" alt="" />
+              <p>Roles</p>
+            </div>
+            <div id="tab-indicator"></div>
+          </div>
+
+          <div id="sidebar-menu-access" class="sidebar-menu-item">
+            <img src="../Assets/Images/Horizontal nav/assign user.svg" alt="" />
+            <p>Access Rights</p>
+          </div>
+        </div>
+
+        <div id="update-message">
+          <h5>Install new update 2.3.1A</h5>
+          <p>Allow to launch the new update for the AD application</p>
+          <div id="update-message-btn-container">
+            <button id="dismiss-btn" class="update-message-btn">Dismiss</button>
+            <button id="accept-btn" class="update-message-btn">Accept</button>
+          </div>
+        </div>
+      </section>
+      <section id="content">
+        <div class="search">
+          <img
+            id="search-icon"
+            src="../Assets/Images/bx-search.png"
+            alt="Search Icon"
+          />
+          <input type="search" class="search-input" placeholder="Search" />
+
+          <span id="icon-menu-container">
+            <img
+              class="menu-icon"
+              src="../Assets/Images/Vertical Navbar/Language.svg"
+              alt=""
+            />
+            <img
+              class="menu-icon"
+              src="../Assets/Images/Vertical Navbar/Categories.svg"
+              alt=""
+            />
+            <img
+              class="menu-icon"
+              src="../Assets/Images/Vertical Navbar/Mode.svg"
+              alt=""
+            />
+            <img
+              id="notifications-icon"
+              class="menu-icon"
+              src="../Assets/Images/Vertical Navbar/Notifications.svg"
+              alt=""
+            />
+          </span>
+
+          <div id="profile">
+            <img
+              class="profile-image"
+              src="../Assets/Images/jhon abraham.jpg"
+              alt=""
+            />
+            <div id="user-status"></div>
+
+            <div id="profile-text-container">
+              <p id="profile-name">Jhon Abraham</p>
+              <p id="profile-designation">Admin</p>
+            </div>
+            <select name="profile-dropdown" id="profile-dropdown"></select>
+          </div>
+        </div>
+
+        <div id="content-employee">
+          <div id="content-employee-title">
+            <h4>Roles > Employees</h4>
+            <p>All the roles are configured here.</p>
+          </div>
+
+          <div class="employee-operation">
+            <button id="add-employee-btn">
+              <img
+                id="add-employee-icon"
+                src="../Assets/Images/Interface/Add.svg"
+              />ADD EMPLOYEE
+            </button>
+          </div>
+        </div>
+
+        <div id="role-description">
+          <h4 id="role-desc-title">Role Description</h4>
+          <div id="role-desc-text">
+            <p>
+              Configure the providers that are available to users when they sign
+              in.Configure the providers that are available to users when they
+              sign in.Configure the providers that are available to users when
+              they sign in.Configure the providers that are available to users
+              when they sign in.
+            </p>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <div class="card__content">
+              <div class="card__info">
+                <div class="employee-icon-container">
+                  <img
+                    id="stack-img-1"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                </div>
+
+                <div id="employee-icon-description">
+                  <h5 id="employee-icon-title">Robort Fox</h5>
+                  <p id="employee-icon-text">Head of product design</p>
+                </div>
+              </div>
+              <div id="employee_code" class="card__info">
+                <img
+                  id="department-logo"
+                  src="../Assets/Images/employee_code.svg"
+                  alt="department logo"
+                />
+                <p id="department-txt" class="">INF122</p>
+              </div>
+              <div id="employee_mail" class="card__info">
+                <img
+                  id="mail-logo"
+                  src="../Assets/Images/email.svg"
+                  alt="department logo"
+                />
+                <p id="mail-txt" class="">adamk@yahoo.com</p>
+              </div>
+              <div id="employee_field" class="card__info">
+                <img
+                  id="field-logo"
+                  src="../Assets/Images/department-logo.svg"
+                  alt="department logo"
+                />
+                <p id="field-txt" class="">Technology</p>
+              </div>
+              <div class="card__info">
+                <img
+                  id="location-logo"
+                  src="../Assets/Images/location-logo.svg"
+                  alt="department logo"
+                />
+                <p id="location-txt" class="">Stockton,New Hampshire</p>
+              </div>
+
+              <div id="all-employee-btn-container">
+                <div id="view-all-employee">
+                  <p>
+                    View
+                    <img
+                      src="../Assets/Images/arrow-right.svg"
+                      alt="arrow right"
+                    />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__content">
+              <div class="card__info">
+                <div class="employee-icon-container">
+                  <img
+                    id="stack-img-1"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                </div>
+
+                <div id="employee-icon-description">
+                  <h5 id="employee-icon-title">Marvin Mckinney</h5>
+                  <p id="employee-icon-text">Head of Engineering</p>
+                </div>
+              </div>
+              <div id="employee_code" class="card__info">
+                <img
+                  id="department-logo"
+                  src="../Assets/Images/employee_code.svg"
+                  alt="department logo"
+                />
+                <p id="department-txt" class="">INF150</p>
+              </div>
+              <div id="employee_mail" class="card__info">
+                <img
+                  id="mail-logo"
+                  src="../Assets/Images/email.svg"
+                  alt="department logo"
+                />
+                <p id="mail-txt" class="">sravani@yahoo.com</p>
+              </div>
+              <div id="employee_field" class="card__info">
+                <img
+                  id="field-logo"
+                  src="../Assets/Images/department-logo.svg"
+                  alt="department logo"
+                />
+                <p id="field-txt" class="">Admin</p>
+              </div>
+              <div class="card__info">
+                <img
+                  id="location-logo"
+                  src="../Assets/Images/location-logo.svg"
+                  alt="department logo"
+                />
+                <p id="location-txt" class="">Syracuse,connecticut</p>
+              </div>
+
+              <div id="all-employee-btn-container">
+                <div id="view-all-employee">
+                  <p>
+                    View
+                    <img
+                      src="../Assets/Images/arrow-right.svg"
+                      alt="arrow right"
+                    />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__content">
+              <div class="card__info">
+                <div class="employee-icon-container">
+                  <img
+                    id="stack-img-1"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                </div>
+
+                <div id="employee-icon-description">
+                  <h5 id="employee-icon-title">Elenor pena</h5>
+                  <p id="employee-icon-text">Senior Interaction Designer</p>
+                </div>
+              </div>
+              <div id="employee_code" class="card__info">
+                <img
+                  id="department-logo"
+                  src="../Assets/Images/employee_code.svg"
+                  alt="department logo"
+                />
+                <p id="department-txt" class="">INF240</p>
+              </div>
+              <div id="employee_mail" class="card__info">
+                <img
+                  id="mail-logo"
+                  src="../Assets/Images/email.svg"
+                  alt="department logo"
+                />
+                <p id="mail-txt" class="">grolschie@mac.com</p>
+              </div>
+              <div id="employee_field" class="card__info">
+                <img
+                  id="field-logo"
+                  src="../Assets/Images/department-logo.svg"
+                  alt="department logo"
+                />
+                <p id="field-txt" class="">Customer Executive</p>
+              </div>
+              <div class="card__info">
+                <img
+                  id="location-logo"
+                  src="../Assets/Images/location-logo.svg"
+                  alt="department logo"
+                />
+                <p id="location-txt" class="">Portland,Illinois</p>
+              </div>
+
+              <div id="all-employee-btn-container">
+                <div id="view-all-employee">
+                  <p>
+                    View
+                    <img
+                      src="../Assets/Images/arrow-right.svg"
+                      alt="arrow right"
+                    />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__content">
+              <div class="card__info">
+                <div class="employee-icon-container">
+                  <img
+                    id="stack-img-1"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                </div>
+
+                <div id="employee-icon-description">
+                  <h5 id="employee-icon-title">Jane Cooper</h5>
+                  <p id="employee-icon-text">Product Analyst</p>
+                </div>
+              </div>
+              <div id="employee_code" class="card__info">
+                <img
+                  id="department-logo"
+                  src="../Assets/Images/employee_code.svg"
+                  alt="department logo"
+                />
+                <p id="department-txt" class="">INF389</p>
+              </div>
+              <div id="employee_mail" class="card__info">
+                <img
+                  id="mail-logo"
+                  src="../Assets/Images/email.svg"
+                  alt="department logo"
+                />
+                <p id="mail-txt" class="">chronos@aol.com</p>
+              </div>
+              <div id="employee_field" class="card__info">
+                <img
+                  id="field-logo"
+                  src="../Assets/Images/department-logo.svg"
+                  alt="department logo"
+                />
+                <p id="field-txt" class="">Product</p>
+              </div>
+              <div class="card__info">
+                <img
+                  id="location-logo"
+                  src="../Assets/Images/location-logo.svg"
+                  alt="department logo"
+                />
+                <p id="location-txt" class="">Coppell,Virginia</p>
+              </div>
+
+              <div id="all-employee-btn-container">
+                <div id="view-all-employee">
+                  <p>
+                    View
+                    <img
+                      src="../Assets/Images/arrow-right.svg"
+                      alt="arrow right"
+                    />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__content">
+              <div class="card__info">
+                <div class="employee-icon-container">
+                  <img
+                    id="stack-img-1"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                </div>
+
+                <div id="employee-icon-description">
+                  <h5 id="employee-icon-title">Floyd Mile</h5>
+                  <p id="employee-icon-text">Visual Desginer</p>
+                </div>
+              </div>
+              <div id="employee_code" class="card__info">
+                <img
+                  id="department-logo"
+                  src="../Assets/Images/employee_code.svg"
+                  alt="department logo"
+                />
+                <p id="department-txt" class="">INF209</p>
+              </div>
+              <div id="employee_mail" class="card__info">
+                <img
+                  id="mail-logo"
+                  src="../Assets/Images/email.svg"
+                  alt="department logo"
+                />
+                <p id="mail-txt" class="">dgatwood@msn.com</p>
+              </div>
+              <div id="employee_field" class="card__info">
+                <img
+                  id="field-logo"
+                  src="../Assets/Images/department-logo.svg"
+                  alt="department logo"
+                />
+                <p id="field-txt" class="">Customer Executive</p>
+              </div>
+              <div class="card__info">
+                <img
+                  id="location-logo"
+                  src="../Assets/Images/location-logo.svg"
+                  alt="department logo"
+                />
+                <p id="location-txt" class="">Lansing,Illinois</p>
+              </div>
+
+              <div id="all-employee-btn-container">
+                <div id="view-all-employee">
+                  <p>
+                    View
+                    <img
+                      src="../Assets/Images/arrow-right.svg"
+                      alt="arrow right"
+                    />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card__content">
+              <div class="card__info">
+                <div class="employee-icon-container">
+                  <img
+                    id="stack-img-1"
+                    src="../Assets/Images/user.png"
+                    alt=""
+                  />
+                </div>
+
+                <div id="employee-icon-description">
+                  <h5 id="employee-icon-title">Dianne Russell</h5>
+                  <p id="employee-icon-text">Full Stack Softare Engineer</p>
+                </div>
+              </div>
+              <div id="employee_code" class="card__info">
+                <img
+                  id="department-logo"
+                  src="../Assets/Images/employee_code.svg"
+                  alt="department logo"
+                />
+                <p id="department-txt" class="">INF922</p>
+              </div>
+              <div id="employee_mail" class="card__info">
+                <img
+                  id="mail-logo"
+                  src="../Assets/Images/email.svg"
+                  alt="department logo"
+                />
+                <p id="mail-txt" class="">kspiteri@live.com</p>
+              </div>
+              <div id="employee_field" class="card__info">
+                <img
+                  id="field-logo"
+                  src="../Assets/Images/department-logo.svg"
+                  alt="department logo"
+                />
+                <p id="field-txt" class="">Human Research</p>
+              </div>
+              <div class="card__info">
+                <img
+                  id="location-logo"
+                  src="../Assets/Images/location-logo.svg"
+                  alt="department logo"
+                />
+                <p id="location-txt" class="">Corona,Michigan</p>
+              </div>
+
+              <div id="all-employee-btn-container">
+                <div id="view-all-employee">
+                  <p>
+                    View
+                    <img
+                      src="../Assets/Images/arrow-right.svg"
+                      alt="arrow right"
+                    />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="../Dist/sidebar.js"></script>
+  </body>
+</html>

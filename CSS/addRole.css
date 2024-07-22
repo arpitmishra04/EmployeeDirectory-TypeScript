@@ -1,0 +1,658 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+main {
+  display: flex;
+}
+
+/* SIDE BAR SECTION START */
+
+#sidebar {
+  width: 18%;
+  /* height: 100%; */
+  transition: 0.1s cubic-bezier(0.36, -0.01, 0, 0.77);
+  position: relative;
+}
+
+#sidebar.close {
+  width: 3%;
+  #menu-desc {
+    height: 0;
+    opacity: 0;
+    margin-top: 100%;
+  }
+
+  #sidebar-menu-dashboard img {
+    width: 100%;
+  }
+
+  #sidebar-menu-employees img {
+    width: 100%;
+  }
+
+  #tab-indicator {
+    display: none;
+  }
+
+  #sidebar-menu-role img {
+    width: 100%;
+  }
+  #sidebar-menu-access img {
+    width: 100%;
+  }
+
+  .sidebar-menu-item p {
+    opacity: 0;
+  }
+
+  #sidebar-menu-employees p {
+    opacity: 0;
+  }
+
+  .tezo-logo {
+    overflow: hidden;
+    height: 35px;
+    width: 100px;
+    margin-left: 6%;
+    margin-top: 58%;
+  }
+
+  #handle {
+    cursor: pointer;
+    position: absolute;
+    left: 80%;
+    top: 35%;
+    width: 90%;
+    transform: rotateY(180deg);
+  }
+
+  #update-message {
+    display: none;
+  }
+}
+
+#hehe {
+  position: relative;
+  display: flex;
+  height: 4%;
+}
+
+#handle {
+  cursor: pointer;
+  position: absolute;
+  right: -4%;
+  top: 35%;
+  width: 15%;
+}
+
+.tezo-logo {
+  height: 35px;
+  width: 100px;
+  margin-left: 9%;
+  margin-top: 8%;
+}
+
+.tezo-logo img {
+  width: 100px;
+}
+
+#menu-desc {
+  font-size: 1vw;
+  padding-left: 9%;
+  padding-top: 10%;
+  color: gray;
+  opacity: 0.5;
+}
+
+.sidebar-menu-item p {
+  font-size: 1vw;
+  color: rgb(162, 162, 162);
+  font-weight: 600;
+  margin-left: 5%;
+}
+
+.sidebar-menu-item {
+  display: flex;
+  padding-left: 9%;
+}
+
+#sidebar-menu-dashboard {
+  margin-top: 6%;
+}
+
+#employee-option-container {
+  position: relative;
+}
+
+#sidebar-menu-employees img {
+  color: gray;
+}
+a {
+  text-decoration: none;
+}
+#sidebar-menu-roles {
+  border-radius: 10px;
+  margin-right: 6%;
+  padding-left: -10%;
+  background-color: rgb(255 227 227);
+}
+
+#tab-indicator {
+  position: absolute;
+  background-color: rgb(255, 63, 63);
+  width: 2%;
+  height: 100%;
+  top: 0%;
+  left: 53%;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-left: 45%;
+}
+
+#sidebar-menu-roles p {
+  color: red;
+  opacity: 0.6;
+}
+
+#update-message {
+  position: absolute;
+  /* margin-top: 100vh; */
+  margin-right: 5%;
+  margin-left: 2%;
+  border-radius: 6px;
+  background-color: rgba(255, 88, 88, 0.102);
+  bottom: 0;
+}
+#update-message h5 {
+  font-size: 1vw;
+  color: rgba(255, 0, 0, 0.605);
+  padding-top: 5%;
+  padding-left: 4%;
+  margin-bottom: 0%;
+  text-align: left;
+}
+
+#update-message p {
+  font-size: 1.1vw;
+  padding-left: 4%;
+  text-align: left;
+  margin-top: 3%;
+  margin-bottom: 0%;
+  line-height: 3vh;
+  color: rgba(128, 128, 128, 0.384);
+}
+
+#update-message-btn-container {
+  width: 16vw;
+}
+#dismiss-btn,
+#accept-btn {
+  margin-top: 3%;
+  margin-bottom: 5%;
+  width: 5.3vw;
+  height: 2em;
+  border-radius: 6px;
+}
+
+#dismiss-btn {
+  font-size: 1vw;
+  margin-left: 8%;
+  background-color: rgba(255, 88, 88, 0.289);
+  border-style: none;
+  color: red;
+}
+
+#accept-btn {
+  font-size: 1vw;
+  margin-left: 4%;
+  background-color: rgba(255, 0, 0, 0.673);
+  border-style: none;
+  color: white;
+}
+
+/* SIDE BAR SECTION END */
+
+
+/* CONTENT SECTION START */
+#content {
+  width: 82%;
+  height: 100%;
+}
+
+#content.content-width {
+  width: 97%;
+}
+
+.search {
+  position: relative;
+  width: 98%;
+  height: 10vh;
+  margin-top: 0.5%;
+  margin-left: 2%;
+}
+
+.search-input {
+  width: 100%;
+  height: 100%;
+  border-style: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgb(202, 202, 202);
+}
+
+::placeholder {
+  padding-left: 4%;
+  font-size: 1.2vw;
+  opacity: 0.5;
+}
+
+#search-icon {
+  position: absolute;
+  width: 2%;
+  left: 1.5%;
+  top: 32%;
+}
+
+#icon-menu-container {
+  position: absolute;
+  left: 63%;
+  top: 12%;
+}
+
+#notifications-icon {
+  margin-top: -1%;
+}
+.menu-icon {
+  width: 3.5vw;
+}
+
+#profile {
+  display: flex;
+  position: absolute;
+  right: 2%;
+  top: 15%;
+  width: 13%;
+}
+
+#profile-text-container p {
+  margin-top: 4%;
+  margin-bottom: 0%;
+  white-space: nowrap;
+}
+
+.profile-image {
+  position: relative;
+  margin-top: 0%;
+  width: 28%;
+  border-radius: 100%;
+}
+
+#user-status {
+  width: 6%;
+  height: 23%;
+  border-radius: 50%;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  background-color: green;
+  position: absolute;
+  top: 79%;
+  left: 18%;
+}
+
+#profile-text-container {
+  margin-left: 4%;
+}
+
+#profile-name {
+  font-size: 0.8vw;
+  font-weight: 600;
+}
+#profile-designation {
+  font-size: 0.9vw;
+  font-weight: 800;
+}
+
+#profile-dropdown {
+  position: absolute;
+  /* height: 57%; */
+  width: 1vw;
+  /* margin-left: 4%; */
+  font-size: 2vw;
+  /* margin-top: -7%; */
+  margin-bottom: 10%;
+  right: 0%;
+}
+
+#profile-dropdown {
+  border-style: none;
+}
+
+/* ADD ROLE DIVISION STARTS */
+.add-role-section {
+  padding: 30px 10px 10px 10px;
+}
+#add-role-form h3 {
+  font-size: 1.3em;
+}
+
+#role-name {
+  height: 30%;
+}
+
+.role-department-section {
+  display: flex;
+}
+.form-element {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  width: 235px;
+  margin-right: 10px;
+}
+.form-element label {
+  padding-bottom: 5px;
+  color: #787d88;
+}
+.form-element input,
+textarea {
+  border: 2px solid #dfe1e6;
+  border-radius: 5px;
+  background-color: #fafbfc;
+}
+.form-element select {
+  border: none;
+  background-color: #f4f5f7;
+}
+.form-element input,
+select {
+  height: 35px;
+  padding: 5px;
+}
+.form-element textarea {
+  padding: 5px;
+}
+.form-element input:focus,
+select:focus,
+textarea:focus {
+  outline-color: #4c9aff;
+}
+#role-description {
+  width: 480px;
+}
+.select {
+  width: 350px;
+}
+#assign-employees {
+  background-position: 330px;
+  background-size: 10px;
+  background-repeat: no-repeat;
+}
+.dropdown-content {
+  margin-top: 60px;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 350px;
+  z-index: 1;
+}
+.emp-dropdown {
+  border: 2px solid #dfe1e6;
+  border-radius: 10px;
+  padding: 2px 2px 2px 10px;
+  margin-bottom: 5px;
+}
+.dropdown-content input[type="checkbox"] {
+  margin-left: 210px;
+}
+.dropdown-content input[type="checkbox"]:checked {
+  accent-color: red;
+}
+.show {
+  display: block;
+}
+.dropdown-content label {
+  display: flex;
+  padding: 0px 0px 0px 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.dropdown-content img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 200px;
+}
+.form-buttons input {
+  height: 35px;
+  width: 110px;
+  border: none;
+  margin-right: 10px;
+  border-radius: 8px;
+}
+#cancel {
+  cursor: pointer;
+  color: red;
+  background-color: #fbebeb;
+}
+#submit {
+  cursor: pointer;
+  color: white;
+  background-color: #f44848;
+}
+
+/* ADD ROLE DIVISION ENDS */
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1000px) {
+  #sidebar {
+    display: none;
+  }
+
+  #content {
+    width: 100%;
+  }
+
+  .search {
+    width: 100%;
+    height: 8vh;
+    margin-left: 1%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+}
+
+@media only screen and (max-width: 500px) {
+}
+
+@media only screen and (max-width: 900px) {
+}
+
+@media only screen and (max-width: 2560px) and (min-width: 2560px) {
+}
+@media only screen and (min-width: 1000px) and (max-width: 1024px) {
+}
+@media only screen and (max-width: 492px) and (min-width: 401px) {
+  .search {
+    width: 100%;
+    height: 8vh;
+  }
+
+  ::placeholder {
+    padding-left: 6%;
+    font-size: 2vw;
+    opacity: 0.5;
+  }
+
+  #search-icon {
+    position: absolute;
+    width: 3%;
+    left: 1.5%;
+    top: 30%;
+  }
+
+  #icon-menu-container {
+    position: absolute;
+    left: 55%;
+    top: 24%;
+  }
+
+  #profile {
+    width: 30%;
+    top: 22%;
+    right: -10%;
+  }
+
+  #profile-text-container p {
+    margin-top: 2%;
+    margin-bottom: 0%;
+    white-space: nowrap;
+  }
+
+  .profile-image {
+    position: relative;
+    margin-top: 0%;
+    width: 15%;
+    border-radius: 100%;
+  }
+
+  #user-status {
+    width: 3%;
+    height: 19%;
+    border-radius: 50%;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    background-color: green;
+    position: absolute;
+    top: 75%;
+    left: 11%;
+  }
+
+  #profile-text-container {
+    margin-left: 4%;
+  }
+
+  #profile-name {
+    font-size: 1vw;
+    font-weight: 600;
+  }
+  #profile-designation {
+    font-size: 2vw;
+    font-weight: 800;
+  }
+
+  #profile-dropdown {
+    position: absolute;
+    /* height: 57%; */
+    width: 2vw;
+    height: 2vh;
+    /* margin-left: 4%; */
+    font-size: 2vw;
+    /* margin-top: -7%; */
+    margin-bottom: 10%;
+    left: 48%;
+    border-style: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .search {
+    width: 100%;
+    height: 6vh;
+  }
+
+  ::placeholder {
+    padding-left: 6%;
+    font-size: 2vw;
+    opacity: 0.5;
+  }
+
+  #search-icon {
+    position: absolute;
+    width: 3%;
+    left: 1.5%;
+    top: 30%;
+  }
+
+  #icon-menu-container {
+    position: absolute;
+    left: 55%;
+    top: 24%;
+  }
+
+  #profile {
+    width: 30%;
+    top: 22%;
+    right: -10%;
+  }
+
+  #profile-text-container p {
+    margin-top: 2%;
+    margin-bottom: 0%;
+    white-space: nowrap;
+  }
+
+  .profile-image {
+    position: relative;
+    margin-top: 0%;
+    width: 15%;
+    border-radius: 100%;
+  }
+
+  #user-status {
+    width: 3%;
+    height: 19%;
+    border-radius: 50%;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    background-color: green;
+    position: absolute;
+    top: 75%;
+    left: 11%;
+  }
+
+  #profile-text-container {
+    margin-left: 4%;
+  }
+
+  #profile-name {
+    font-size: 1vw;
+    font-weight: 600;
+  }
+  #profile-designation {
+    font-size: 2vw;
+    font-weight: 800;
+  }
+
+  #profile-dropdown {
+    position: absolute;
+    /* height: 57%; */
+    width: 2vw;
+    height: 2vh;
+    /* margin-left: 4%; */
+    font-size: 2vw;
+    /* margin-top: -7%; */
+    margin-bottom: 10%;
+    left: 48%;
+    border-style: none;
+  }
+}

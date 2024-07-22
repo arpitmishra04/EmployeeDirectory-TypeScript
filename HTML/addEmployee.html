@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/addEmployee.css" />
+    <link rel="stylesheet" href="../Assets/font-icon/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Add Employee</title>
+  </head>
+  <body>
+    <main>
+      <section id="sidebar">
+        <div id="hehe">
+          <div class="tezo-logo">
+            <a href="employee.html"><img src="../Assets/Images/TezoLogo.png" alt="Tezo Logo" /></a>
+          </div>
+          <img id="handle" src="../Assets/Images/handle.png" alt="" />
+        </div>
+
+        <div class="menu">
+          <p id="menu-desc">ALL</p>
+          <div id="sidebar-menu-dashboard" class="sidebar-menu-item">
+            <img src="../Assets/Images/Horizontal nav/Dashboard.svg" alt="" />
+            <p>Dashboard</p>
+          </div>
+
+          <div id="employee-option-container">
+            <div id="sidebar-menu-employees" class="sidebar-menu-item">
+              <img src="../Assets/Images/Horizontal nav/Employees.svg" alt="" />
+              <p>Employees</p>
+            </div>
+            <div id="tab-indicator"></div>
+          </div>
+        </div>
+
+        <div class="menu">
+          <p id="menu-desc">Role/User Management</p>
+          <a href="roles.html">
+            <div id="sidebar-menu-role" class="sidebar-menu-item">
+              <img src="../Assets/Images/Horizontal nav/Roles.svg" alt="" />
+              <p>Roles</p>
+            </div>
+          </a>
+
+          <div id="sidebar-menu-access" class="sidebar-menu-item">
+            <img src="../Assets/Images/Horizontal nav/assign user.svg" alt="" />
+            <p>Access Rights</p>
+          </div>
+        </div>
+
+        <div id="update-message">
+          <h5>Install new update 2.3.1A</h5>
+          <p>Allow to launch the new update for the AD application</p>
+          <div id="update-message-btn-container">
+            <button id="dismiss-btn" class="update-message-btn">Dismiss</button>
+            <button id="accept-btn" class="update-message-btn">Accept</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="content">
+        <div class="search">
+          <img
+            id="search-icon"
+            src="../Assets/Images/bx-search.png"
+            alt="Search Icon"
+          />
+          <input type="search" class="search-input" placeholder="Search" />
+
+          <span id="icon-menu-container">
+            <img
+              class="menu-icon"
+              src="../Assets/Images/Vertical Navbar/Language.svg"
+              alt=""
+            />
+            <img
+              class="menu-icon"
+              src="../Assets/Images/Vertical Navbar/Categories.svg"
+              alt=""
+            />
+            <img
+              class="menu-icon"
+              src="../Assets/Images/Vertical Navbar/Mode.svg"
+              alt=""
+            />
+            <img
+              id="notifications-icon"
+              class="menu-icon"
+              src="../Assets/Images/Vertical Navbar/Notifications.svg"
+              alt=""
+            />
+          </span>
+
+          <div id="profile">
+            <img
+              class="profile-image"
+              src="../Assets/Images/jhon abraham.jpg"
+              alt=""
+            />
+            <div id="user-status"></div>
+
+            <div id="profile-text-container">
+              <p id="profile-name">Jhon Abraham</p>
+              <p id="profile-designation">Admin</p>
+            </div>
+            <select name="profile-dropdown" id="profile-dropdown"></select>
+          </div>
+        </div>
+
+        <div class="employee-details">
+          <div class="title">Add Employee</div>
+          <div class="personal-information">
+            <div class="left-wrapper">
+              <div class="img-wrapper">
+                <img
+                  id="profilepic"
+                  src="../Assets/Images/user2.png"
+                  alt="profile"
+                />
+              </div>
+              <label id="Edit-btn" for="uploadImage" class="btn">Upload</label>
+                <input type='file' style="visibility:hidden;" id="uploadImage" />
+              
+            </div>
+            <div class="right-wrapper">
+              <!-- Collecting User Input -->
+              <form id="addEmployeeForm">
+                <div class="title">Personal information</div>
+                <div class="employee-information">
+                  <div class="name employee-number">
+                    <label for="empNo">Employee Number</label>
+                    <input
+                      class="input-form-element"
+                      type="text"
+                      placeholder="Enter Employee Number"
+                      id="empNo" 
+                      name="empNo" 
+                      required
+                    />
+                    <span id="requiredField"></span>
+                  </div>
+                  <div class="employee">
+                    <div class="name">
+                      <label for="firstName">First Name</label>
+                      <input
+                        class="input-form-element"
+                        type="text"
+                        placeholder="Enter First Name"
+                        id="firstName" 
+                        name="firstName"
+                        required
+                      />
+                      <span id="requiredFName"></span>
+                    </div>
+                    <div class="name">
+                      <label for="lastName">Last Name</label>
+                      <input
+                        class="input-form-element"
+                        type="text"
+                        placeholder="Enter Last Name"
+                        id="lastName"
+                        name="lastName"
+                        required
+                      />
+                      <span id="requiredLName"></span>
+                    </div>
+                    <div  class="name">
+                     <label for="dob">Date of Birth</label>
+                      <input
+                        class="input-form-element"
+                        type="text"
+                        placeholder="&#128197; select"
+                        onfocus="(this.type='date')"
+                        id="dob" 
+                        name="dob" 
+                      />
+                      
+                    </div>
+                  </div>
+                  <div class="employee">
+                    <div for="emailId" class="name">
+                      <label for="email">Email Id</label>
+                      <input
+                        class="input-form-element"
+                        type="email"
+                        placeholder="Enter Email"
+                        id="email"
+                        name="email"
+                        required
+                      />
+                      <span id="requiredEmail"></span>
+                    </div>
+                    <div class="name">
+                      <label for="mobile">Mobile Number</label>
+                      <input
+                        class="input-form-element"
+                        type="text"
+                        placeholder="Enter Mobile Number"
+                        id="mobile"
+                        name="mobile"
+                        minlength="10" maxlength="10"
+                      />
+                      <span id="requiredMobile"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="title">Employment information</div>
+                <div class="employment-information">
+                  <div class="details">
+                    <div class="input-form name">
+                      <label for="joiningDate">Joining Date</label>
+                      <input
+                        type="text"
+                        class="input-form-element"
+                        placeholder="12/8/2023"
+                        onfocus="(this.type='date')"
+                        id="joiningDate" 
+                        name="joiningDate" 
+                        required
+                      />
+                      <span id="requiredJDate"></span>
+                    </div>
+                    <div class="input-form">
+                      <label for="location">Location</label>
+                      <select
+                        class="input-form-element"
+                        name="location"
+                        id="location"
+                        >
+                        <option selected disabled hidden>Location</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Banglore">Banglore</option>
+                        <option value="Delhi">Delhi</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <div class="input-form">
+                      <label for="jobTitle">Job Title</label>
+                      <select
+                        class="input-form-element"
+                        name="jobTitle"
+                        id="jobTitle">
+                        <option selected disabled hidden>Job Title</option>
+                        <option value="Full-stack Devloper">Full-stack Developer</option>
+                        <option value="Backend Developer">Backend Developer</option>
+                        <option value="Data Analyst">Data Analyst</option>
+                        <option value="Content Strategist">Content Strategist</option>
+                        <option value="QA Lead">QA Lead</option>
+                      </select>
+                    </div>
+                    <div class="input-form">
+                      <label for="department">Department</label>
+                      <select
+                        class="input-form-element"
+                        name="department"
+                        id="department">  
+                        <option selected disabled hidden>Department</option>
+                        <option value="Product Engg">Product Engg</option>
+                        <option value="Data Analysis">Data Analysis</option>
+                        <option value="Quality Assurance">Quality Assurance</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="details">
+                    <div class="input-form">
+                      <label for="assignManager">Assign Manager</label>
+                      <select
+                        type="text"
+                        class="input-form-element"
+                        id="assignManager"
+                        name="assignManager"
+                      >
+                      <option value="" disabled selected hidden>Search</option>
+                      <option value="Manager1">Manager1</option>
+                      <option value="Manager2">Manager2</option>
+                    </select>
+                    </div>
+                    <div class="input-form">
+                      <label for="assignProject">Assign Project</label>
+                      <select type="text"
+                        class="input-form-element "
+                        id="assignProject"
+                        name="assignProject"
+                        placeholder="Search"
+                      >
+                      <option value="" disabled selected hidden>Search</option>
+                      <option value="Project1">Project1</option>
+                      <option value="Project2">Project2</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="btn-wrapper">
+                    <div class="cancel">
+                      <button id="cancelBtn">Cancel</button>
+                    </div>
+                    <div class="add-employee">
+                    <button id="addEmployeeBtn"  class="form-add-employee">Add Employee</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div id="toastBox"></div>
+      </section>
+    </main>
+    <script src="../Dist/sidebar.js"></script>
+    <script src="../Dist/addEmployee.js"></script>
+  </body>
+</html>

@@ -1,0 +1,149 @@
+/* SIDE BAR SECTION START */
+
+#sidebar {
+  width: 18%;
+  height: 100%;
+}
+
+#content {
+  width: 82%;
+  height: 100%;
+}
+
+#hehe {
+  display: flex;
+  height: 80%;
+}
+
+#handle {
+  position: absolute;
+  left: 17%;
+  top: 4%;
+  width: 2.5%;
+}
+
+.tezo-logo {
+  height: auto;
+  width: 46%;
+  margin-left: 9%;
+  margin-top: 8%;
+}
+
+.tezo-logo img {
+  width: 100%;
+}
+
+#menu-desc {
+  font-size: 1vw;
+  padding-left: 9%;
+  padding-top: 10%;
+  color: gray;
+  opacity: 0.5;
+}
+
+.sidebar-menu-item p {
+  font-size: 1vw;
+  color: rgb(162, 162, 162);
+  font-weight: 600;
+  margin-left: 5%;
+}
+
+.sidebar-menu-item img {
+  width: 10%;
+}
+
+.sidebar-menu-item {
+  display: flex;
+  padding-left: 9%;
+}
+
+#sidebar-menu-dashboard {
+  margin-top: 6%;
+}
+
+#employee-option-container {
+  position: relative;
+}
+#sidebar-menu-employees {
+  border-radius: 10px;
+  margin-right: 6%;
+  padding-left: -10%;
+  background-color: rgb(255 227 227);
+}
+
+#tab-indicator {
+  position: absolute;
+  background-color: rgb(255, 63, 63);
+  width: 2%;
+  height: 100%;
+  top: 0%;
+  left: 53%;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-left: 45%;
+}
+
+#sidebar-menu-employees p {
+  color: red;
+  opacity: 0.6;
+}
+
+#update-message {
+  position: relative;
+  margin-top: 65vh;
+  height: 45%;
+  margin-right: 5%;
+  margin-left: 2%;
+  border-radius: 6px;
+  background-color: rgba(255, 88, 88, 0.102);
+}
+
+#update-message h5 {
+  font-size: 1vw;
+  color: rgba(255, 0, 0, 0.605);
+  padding-top: 5%;
+  padding-left: 4%;
+  margin-bottom: 0%;
+  text-align: left;
+}
+
+#update-message p {
+  font-size: 1.1vw;
+  padding-left: 4%;
+  text-align: left;
+  margin-top: 3%;
+  margin-bottom: 0%;
+  line-height: 3vh;
+  color: rgba(128, 128, 128, 0.384);
+}
+
+#update-message-btn-container {
+  width: 16vw;
+}
+#dismiss-btn,
+#accept-btn {
+  margin-top: 3%;
+  margin-bottom: 5%;
+  width: 5.3vw;
+  height: 2em;
+  border-radius: 6px;
+}
+
+#dismiss-btn {
+  font-size: 1vw;
+  margin-left: 8%;
+  background-color: rgba(255, 88, 88, 0.289);
+  border-style: none;
+  color: red;
+}
+
+#accept-btn {
+  font-size: 1vw;
+  margin-left: 4%;
+  background-color: rgba(255, 0, 0, 0.673);
+  border-style: none;
+  color: white;
+}
+
+/* SIDE BAR SECTION END */

@@ -1,0 +1,1398 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+main {
+  display: flex;
+}
+
+/* SIDE BAR SECTION START */
+
+#sidebar {
+  width: 18%;
+  /* height: 100%; */
+  transition: 0.1s cubic-bezier(0.36, -0.01, 0, 0.77);
+  position: relative;
+}
+
+#sidebar.close {
+  width: 3%;
+  #menu-desc {
+    height: 0;
+    opacity: 0;
+    margin-top: 100%;
+  }
+
+  #sidebar-menu-dashboard img {
+    width: 100%;
+  }
+
+  #sidebar-menu-employees img {
+    width: 100%;
+  }
+
+  #tab-indicator {
+    display: none;
+  }
+
+  #sidebar-menu-role img {
+    width: 100%;
+  }
+  #sidebar-menu-access img {
+    width: 100%;
+  }
+
+  .sidebar-menu-item p {
+    opacity: 0;
+  }
+
+  #sidebar-menu-employees p {
+    opacity: 0;
+  }
+
+  .tezo-logo {
+    overflow: hidden;
+    height: 35px;
+    width: 100px;
+    margin-left: 6%;
+    margin-top: 58%;
+  }
+
+  #handle {
+    cursor: pointer;
+    position: absolute;
+    left: 80%;
+    top: 35%;
+    width: 90%;
+    transform: rotateY(180deg);
+  }
+
+  #update-message {
+    display: none;
+  }
+}
+
+#hehe {
+  position: relative;
+  display: flex;
+  height: 4%;
+}
+
+#handle {
+  cursor: pointer;
+  position: absolute;
+  right: -4%;
+  top: 35%;
+  width: 15%;
+}
+
+.tezo-logo {
+  height: 35 px;
+  width: 100px;
+  margin-left: 9%;
+  margin-top: 8%;
+}
+
+.tezo-logo img {
+  width: 100px;
+}
+
+#menu-desc {
+  font-size: 1vw;
+  padding-left: 9%;
+  padding-top: 10%;
+  color: gray;
+  opacity: 0.5;
+}
+
+.sidebar-menu-item p {
+  font-size: 1vw;
+  color: rgb(162, 162, 162);
+  font-weight: 600;
+  margin-left: 5%;
+}
+
+.sidebar-menu-item img {
+  width: 10%;
+}
+
+.sidebar-menu-item {
+  display: flex;
+  padding-left: 9%;
+}
+
+#sidebar-menu-dashboard {
+  margin-top: 6%;
+}
+
+#employee-option-container {
+  position: relative;
+}
+#sidebar-menu-employees {
+  border-radius: 10px;
+  margin-right: 6%;
+  padding-left: -10%;
+  background-color: rgb(255 227 227);
+}
+
+#sidebar-menu-access {
+  padding-bottom: 90%;
+}
+
+#tab-indicator {
+  position: absolute;
+  background-color: rgb(255, 63, 63);
+  width: 2%;
+  height: 100%;
+  top: 0%;
+  left: 53%;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-left: 45%;
+}
+
+#sidebar-menu-employees p {
+  color: red;
+  opacity: 0.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+#update-message {
+  position: absolute;
+  /* margin-top: 100vh; */
+  margin-right: 5%;
+  margin-left: 2%;
+  border-radius: 6px;
+  background-color: rgba(255, 88, 88, 0.102);
+  bottom: 0;
+}
+
+#update-message h5 {
+  font-size: 1vw;
+  color: rgba(255, 0, 0, 0.605);
+  padding-top: 5%;
+  padding-left: 4%;
+  margin-bottom: 0%;
+  text-align: left;
+}
+
+#update-message p {
+  font-size: 1.1vw;
+  padding-left: 4%;
+  text-align: left;
+  margin-top: 3%;
+  margin-bottom: 0%;
+  line-height: 3vh;
+  color: rgba(128, 128, 128, 0.384);
+}
+
+#update-message-btn-container {
+  width: 16vw;
+}
+#dismiss-btn,
+#accept-btn {
+  margin-top: 3%;
+  margin-bottom: 5%;
+  width: 5.3vw;
+  height: 2em;
+  border-radius: 6px;
+}
+
+#dismiss-btn {
+  font-size: 1vw;
+  margin-left: 8%;
+  background-color: rgba(255, 88, 88, 0.289);
+  border-style: none;
+  color: red;
+}
+
+#accept-btn {
+  font-size: 1vw;
+  margin-left: 4%;
+  background-color: rgba(255, 0, 0, 0.673);
+  border-style: none;
+  color: white;
+}
+
+/* SIDE BAR SECTION END */
+
+/* CONTENT SECTION START */
+#content {
+  width: 82%;
+  height: 100%;
+}
+
+#content.content-width {
+  width: 97%;
+}
+
+.search {
+  position: relative;
+  width: 98%;
+  height: 10vh;
+  margin-top: 0.5%;
+  margin-left: 2%;
+}
+
+.search-input {
+  width: 100%;
+  height: 100%;
+  border-style: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgb(202, 202, 202);
+}
+
+::placeholder {
+  padding-left: 4%;
+  font-size: 1.2vw;
+  opacity: 0.5;
+}
+
+#search-icon {
+  position: absolute;
+  width: 2%;
+  left: 1.5%;
+  top: 32%;
+}
+
+#icon-menu-container {
+  position: absolute;
+  left: 63%;
+  top: 12%;
+}
+
+#notifications-icon {
+  margin-top: -1%;
+}
+.menu-icon {
+  width: 3.5vw;
+}
+
+#profile {
+  display: flex;
+  position: absolute;
+  right: 2%;
+  top: 15%;
+  width: 13%;
+}
+
+#profile-text-container p {
+  margin-top: 4%;
+  margin-bottom: 0%;
+  white-space: nowrap;
+}
+
+.profile-image {
+  position: relative;
+  margin-top: 0%;
+  width: 28%;
+  border-radius: 100%;
+}
+
+#user-status {
+  width: 6%;
+  height: 23%;
+  border-radius: 50%;
+  border-color: white;
+  border-width: 2px;
+  border-style: solid;
+  background-color: green;
+  position: absolute;
+  top: 79%;
+  left: 18%;
+}
+
+#profile-text-container {
+  margin-left: 4%;
+}
+
+#profile-name {
+  font-size: 0.8vw;
+  font-weight: 600;
+}
+#profile-designation {
+  font-size: 0.9vw;
+  font-weight: 800;
+}
+
+#profile-dropdown {
+  position: absolute;
+  /* height: 57%; */
+  width: 1vw;
+  /* margin-left: 4%; */
+  font-size: 2vw;
+  /* margin-top: -7%; */
+  margin-bottom: 10%;
+  right: 0%;
+}
+
+#profile-dropdown {
+  border-style: none;
+}
+/* EMPLOYEE OPERATION SECTION START */
+
+#content-employee {
+  display: flex;
+  margin-top: 0%;
+  margin-left: 2%;
+}
+#content-employee-title {
+  line-height: 81%;
+}
+
+#content-employee-title p {
+  white-space: nowrap;
+  font-size: 1.1vw;
+  color: rgba(128, 128, 128, 0.676);
+}
+
+#content-employee-title h4 {
+  font-size: 1.1vw;
+  color: rgba(0, 51, 101, 0.613);
+}
+
+.employee-operation {
+  display: flex;
+  width: 60%;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+#export-btn,
+#add-employee-btn {
+  cursor: pointer;
+  position: relative;
+  margin-top: 4%;
+  height: 50%;
+  border-radius: 7px;
+  border-width: 0px;
+}
+#export-btn {
+  width: 20%;
+  font-size: 0.9vw;
+}
+#export-icon {
+  position: absolute;
+  width: 1.3vw;
+  left: 7%;
+  top: 18%;
+}
+#add-employee-btn {
+  width: 40%;
+  margin-left: 2%;
+  font-size: 1vw;
+  background-color: rgb(255, 88, 88);
+  color: white;
+  font-weight: 200;
+}
+
+#add-employee-icon {
+  position: absolute;
+  width: 1.6vw;
+  left: 11%;
+  top: 18%;
+}
+
+.filter-icon {
+  width: 2.4vw;
+  margin-left: 2%;
+  margin-right: 1%;
+}
+
+.filter-icon img {
+  width: 100%;
+}
+
+/* EMPLOYEE OPERATION SECTION END */
+
+/* EMPLOYEE FILTER SECTION START */
+
+#employee-filter {
+  display: flex;
+  margin-top: 2%;
+}
+
+.search-by-letter-container {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  flex-wrap: wrap;
+}
+
+.search-by-letter {
+  cursor: pointer;
+  width: 2.5vw;
+  height: 6vh;
+  font-size: 1vw;
+  border-style: none;
+  border-radius: 7px;
+  background-color: rgba(128, 128, 128, 0.125);
+}
+
+.search-by-letter:hover {
+  background-color: red;
+  color: white;
+  opacity: 0.7;
+}
+
+.filter-categories {
+  display: flex;
+  height: 30%;
+  border-radius: 7px;
+  margin-top: 2%;
+  margin-left: 2%;
+  background-color: rgb(255 227 227);
+}
+
+.filter-categories p {
+  color: rgb(255, 88, 88);
+  margin-left: 1%;
+
+  font-size: 1.1vw;
+}
+
+#dropdown-options {
+  width: 60%;
+  margin-bottom: 1%;
+}
+
+/* Style custom dropdowns */
+.custom-dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.custom-dropdown p {
+  margin: 0;
+  cursor: pointer;
+  color: #00263dbc;
+}
+
+.dropdown-content {
+  display: none;
+  text-align: left;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 120px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  font-size: 12px;
+}
+
+.dropdown-content input[type="checkbox"] {
+  text-align: left;
+}
+
+.dropdown-content label {
+  display: block;
+  margin-bottom: 3px;
+}
+
+/* Show dropdown content on hover */
+.custom-dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#dropdown-options select {
+  cursor: pointer;
+  margin-top: 1%;
+  height: 90%;
+  border-radius: 7px;
+  border-color: red;
+  font-size: 1vw;
+  color: rgba(0, 37, 88, 0.696);
+}
+
+#status-dropdown {
+  margin: 1% 0% 0% 2%;
+  width: 12%;
+  height: 70%;
+  padding-top: 1%;
+  border-radius: 6px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid red;
+}
+#location-dropdown {
+  width: 14%;
+  margin: 1% 0% 0% 2%;
+  height: 70%;
+  padding-top: 1%;
+  border-radius: 6px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid red;
+}
+
+#department-dropdown {
+  width: 19%;
+  margin: 1% 0% 0% 2%;
+  height: 70%;
+  padding-top: 1%;
+  border-radius: 6px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid red;
+}
+
+i {
+  margin-left: 3%;
+  color: #00263d;
+  font-size: 11px;
+}
+.employee-filter-btn-container {
+  display: flex;
+  margin-left: 23%;
+  width: 12%;
+}
+#reset,
+#apply {
+  display: none;
+  cursor: pointer;
+  height: 55%;
+  width: 50%;
+  margin-top: 10%;
+  border-radius: 5px;
+  border-width: 0px;
+  font-size: 0.9vw;
+}
+
+#reset {
+  color: rgb(255, 88, 88);
+  background-color: white;
+  border-width: 1px;
+  border-color: red;
+}
+#apply {
+  margin-left: 5%;
+  background-color: rgb(255, 88, 88);
+  color: white;
+}
+
+/* EMPLOYEE DATA TABLE SECTION START */
+
+/* TABLE OPERATION DIVISON START */
+
+#employee-data-table #table-operations {
+  position: relative;
+  margin-top: 2%;
+  height: 8vh;
+  margin-left: 2%;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  box-shadow: -2px 11px 23px rgb(211, 211, 211);
+}
+
+#delete-operation-btn {
+  cursor: pointer;
+  position: absolute;
+  left: 2%;
+  margin-left: 2%;
+  margin-top: 1%;
+  width: 5vw;
+  height: 60%;
+  background-color: rgb(243, 62, 62);
+  color: white;
+  border-radius: 5px;
+  border-width: 1px;
+  border-color: red;
+  font-size: 1.2vw;
+}
+
+#employee-data-table #table-operations #arrow-left-down-img {
+  position: absolute;
+  width: 1.5vw;
+  top: 25%;
+  left: 1%;
+}
+
+#employee-data-table #table-operations #add-operation-img {
+  position: absolute;
+  width: 1.5vw;
+  top: 16%;
+  right: 3%;
+}
+
+#toastBox {
+  position: fixed;
+  top: 150px;
+  right: 20px;
+  overflow: hidden;
+  z-index: 100;
+}
+.toast {
+  width: 300px;
+  height: 80px;
+  background: #caf4c6;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.toast i {
+  margin: 0 20px;
+  font-size: 35px;
+  color: green;
+}
+.toast::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5px;
+  background: green;
+  animation: anim 5s linear forwards;
+}
+@keyframes anim {
+  100% {
+    width: 0;
+  }
+}
+/* TABLE OPERATION DIVISON END */
+
+/* TABLE DATA DIVISON START */
+
+#table-data {
+  width: 100%;
+}
+
+table {
+  height: 10vh;
+  width: 98%;
+  margin-left: 2%;
+  margin-right: 0%;
+  border-collapse: collapse;
+  box-shadow: -10px 11px 23px rgb(226, 226, 226);
+}
+th {
+  position: sticky;
+  top: 0%;
+  font-size: 1vw;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: rgb(241, 241, 241);
+  color: rgba(0, 37, 88, 0.696);
+}
+
+th i {
+  margin-left: 3%;
+}
+
+th:hover {
+  cursor: pointer;
+}
+
+#filter-status {
+  display: none;
+  text-align: center;
+  margin-top: 10%;
+  z-index: 0;
+}
+
+tr:hover {
+  background-color: rgb(255 227 227);
+}
+
+td {
+  font-size: 1vw;
+  text-align: center;
+  width: 12%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-bottom: 1px solid black;
+}
+
+.Active {
+  width: 5vw;
+  height: 4vh;
+  font-size: 1vw;
+  color: green;
+  background-color: rgba(0, 128, 0, 0.122);
+  border-style: none;
+  border-radius: 5px;
+}
+
+.Inactive {
+  width: 5vw;
+  height: 4vh;
+  font-size: 1vw;
+  color: rgb(255, 0, 0);
+  background-color: rgba(255, 3, 3, 0.122);
+  border-style: none;
+  border-radius: 5px;
+}
+
+.elipse {
+  cursor: pointer;
+  position: relative;
+}
+
+.elipse-details {
+  z-index: 50;
+  display: none;
+  border: 1px solid black;
+  background-color: aliceblue;
+  cursor: pointer;
+  position: absolute;
+  right: 2%;
+  width: 100px;
+}
+.elipse-details h6 {
+  font-size: 14px;
+  border: 1px solid black;
+}
+
+table input[type="checkbox"] {
+  width: 2vw;
+  height: 2vh;
+}
+
+#user-name {
+  display: flex;
+  align-items: center;
+  width: 91%;
+}
+
+#user-img {
+  height: 100%;
+  width: 25%;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+#user-details h4,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#user-details {
+  width: 60%;
+  text-align: left;
+  margin-left: 2%;
+}
+
+#user-details h4 {
+  font-size: smaller;
+}
+
+#user-img img {
+  padding-top: 4%;
+  width: 100%;
+}
+
+/* TABLE DATA DIVISION END */
+
+/* EMPLOYEE DATA TABLE SECRION END */
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1000px) {
+  .card {
+    grid-column-end: span 6;
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  #content {
+    width: 100%;
+  }
+
+  .search {
+    width: 100%;
+    height: 8vh;
+    margin-left: 1%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  main {
+    grid-gap: 20px;
+  }
+  .card {
+    grid-column-end: span 12;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .cards {
+    grid-column: 2 / span 6;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 20px;
+  }
+  .card {
+    grid-column-end: span 6;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+}
+
+@media only screen and (max-width: 2560px) and (min-width: 2560px) {
+  .cards {
+    grid-column: 2 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(auto, 60px));
+    grid-gap: 120px;
+    margin-left: 2%;
+    margin-top: 2%;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1024px) {
+  .cards {
+    grid-column: 2 / span 12;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(auto, 60px));
+    grid-gap: 8px;
+    margin-left: 2%;
+    margin-top: 2%;
+  }
+
+  #view-all-employee {
+    margin-top: 2em;
+    margin-left: 5em;
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 492px) and (min-width: 401px) {
+  .search {
+    width: 100%;
+    height: 8vh;
+  }
+
+  ::placeholder {
+    padding-left: 6%;
+    font-size: 2vw;
+    opacity: 0.5;
+  }
+
+  #search-icon {
+    position: absolute;
+    width: 3%;
+    left: 1.5%;
+    top: 30%;
+  }
+
+  #icon-menu-container {
+    position: absolute;
+    left: 55%;
+    top: 24%;
+  }
+
+  #profile {
+    width: 30%;
+    top: 22%;
+    right: -10%;
+  }
+
+  #profile-text-container p {
+    margin-top: 2%;
+    margin-bottom: 0%;
+    white-space: nowrap;
+  }
+
+  .profile-image {
+    position: relative;
+    margin-top: 0%;
+    width: 15%;
+    border-radius: 100%;
+  }
+
+  #user-status {
+    width: 3%;
+    height: 19%;
+    border-radius: 50%;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    background-color: green;
+    position: absolute;
+    top: 75%;
+    left: 11%;
+  }
+
+  #profile-text-container {
+    margin-left: 4%;
+  }
+
+  #profile-name {
+    font-size: 1vw;
+    font-weight: 600;
+  }
+  #profile-designation {
+    font-size: 2vw;
+    font-weight: 800;
+  }
+
+  #profile-dropdown {
+    position: absolute;
+    /* height: 57%; */
+    width: 2vw;
+    height: 2vh;
+    /* margin-left: 4%; */
+    font-size: 2vw;
+    /* margin-top: -7%; */
+    margin-bottom: 10%;
+    left: 48%;
+    border-style: none;
+  }
+
+  #content-employee-title {
+    width: 50%;
+    line-height: 72%;
+  }
+
+  #content-employee-title h4 {
+    font-size: 3vw;
+    color: rgba(0, 51, 101, 0.613);
+  }
+
+  #content-employee-title p {
+    white-space: nowrap;
+    font-size: 1.7vw;
+    margin-top: -7%;
+    color: rgba(128, 128, 128, 0.676);
+  }
+
+  .employee-operation {
+    display: flex;
+    width: 65%;
+    margin-left: 0%;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  #export-btn,
+  #add-employee-btn {
+    position: relative;
+    margin-top: 10%;
+    height: 50%;
+    border-radius: 7px;
+    border-width: 0px;
+  }
+
+  #export-btn {
+    width: 24%;
+    font-size: 1.5vw;
+  }
+
+  #export-icon {
+    position: absolute;
+    width: 1.3vw;
+    left: 7%;
+    top: 37%;
+  }
+
+  #add-employee-btn {
+    position: relative;
+    border-radius: 7px;
+    border-width: 0px;
+    width: 40%;
+    margin-left: 8%;
+    font-size: 1.5vw;
+    background-color: rgb(255, 88, 88);
+    color: white;
+    font-weight: 200;
+  }
+
+  #add-employee-icon {
+    position: absolute;
+    width: 2vw;
+    left: 5%;
+    top: 28%;
+  }
+
+  .filter-categories p {
+    color: rgb(255, 88, 88);
+    margin-left: 2%;
+    margin-top: 3%;
+    font-size: 2vw;
+  }
+
+  .search-by-letter {
+    width: 2.5vw;
+    height: 4vh;
+    font-size: 1vw;
+    border-style: none;
+    border-radius: 2px;
+    background-color: rgba(128, 128, 128, 0.125);
+  }
+
+  #dropdown-options {
+    width: 88%;
+    margin-bottom: 1%;
+  }
+  #dropdown-options select {
+    position: absolute;
+    top: 26%;
+    box-sizing: border-box;
+    height: 4%;
+    border-radius: 7px;
+    border-color: red;
+    font-size: 2vw;
+  }
+
+  #status-dropdown {
+    width: 22%;
+    left: 4%;
+  }
+  #location-dropdown {
+    width: 28%;
+    left: 5%;
+  }
+
+  #department-dropdown {
+    left: 6%;
+    width: 30%;
+  }
+
+  .employee-filter-btn-container {
+    display: flex;
+    margin-left: 1%;
+    padding-left: 15%;
+    width: 30%;
+  }
+
+  #reset,
+  #apply {
+    height: 50%;
+    width: 40%;
+    margin-top: 10%;
+    border-radius: 5px;
+    border-width: 0px;
+    font-size: 2vw;
+  }
+
+  #reset {
+    color: rgb(255, 88, 88);
+    background-color: white;
+    border-width: 1px;
+    border-color: red;
+  }
+  #apply {
+    margin-left: 5%;
+    background-color: rgb(255, 88, 88);
+    color: white;
+  }
+
+  .employee-filter-btn-container {
+    display: flex;
+    margin-left: 0%;
+    padding-left: 9%;
+    width: 34%;
+  }
+
+  #employee-data-table #table-operations {
+    position: relative;
+    margin-top: 2%;
+    height: 5vh;
+    margin-left: 2%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    box-shadow: -2px 11px 23px rgb(211, 211, 211);
+  }
+
+  #employee-data-table #table-operations #arrow-left-down-img {
+    position: absolute;
+    width: 2.5vw;
+    top: 25%;
+    left: 5%;
+  }
+
+  #delete-operation-btn {
+    position: absolute;
+    left: 2%;
+    margin-left: 8%;
+    margin-top: 1%;
+    width: 8vw;
+    height: 60%;
+    background-color: rgb(255, 142, 142);
+    color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: red;
+    font-size: 1.2vw;
+  }
+
+  #employee-data-table #table-operations #add-operation-img {
+    position: absolute;
+    width: 2.5vw;
+    top: 16%;
+    right: 6%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .search {
+    width: 100%;
+    height: 6vh;
+  }
+
+  ::placeholder {
+    padding-left: 6%;
+    font-size: 2vw;
+    opacity: 0.5;
+  }
+
+  #search-icon {
+    position: absolute;
+    width: 3%;
+    left: 1.5%;
+    top: 30%;
+  }
+
+  #icon-menu-container {
+    position: absolute;
+    left: 55%;
+    top: 24%;
+  }
+
+  #profile {
+    width: 30%;
+    top: 22%;
+    right: -10%;
+  }
+
+  #profile-text-container p {
+    margin-top: 2%;
+    margin-bottom: 0%;
+    white-space: nowrap;
+  }
+
+  .profile-image {
+    position: relative;
+    margin-top: 0%;
+    width: 15%;
+    border-radius: 100%;
+  }
+
+  #user-status {
+    width: 3%;
+    height: 19%;
+    border-radius: 50%;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    background-color: green;
+    position: absolute;
+    top: 75%;
+    left: 11%;
+  }
+
+  #profile-text-container {
+    margin-left: 4%;
+  }
+
+  #profile-name {
+    font-size: 1vw;
+    font-weight: 600;
+  }
+  #profile-designation {
+    font-size: 2vw;
+    font-weight: 800;
+  }
+
+  #profile-dropdown {
+    position: absolute;
+    width: 2vw;
+    height: 2vh;
+    font-size: 2vw;
+    margin-bottom: 10%;
+    left: 48%;
+    border-style: none;
+  }
+
+  #export-btn,
+  #add-employee-btn {
+    position: relative;
+    margin-top: 10%;
+    height: 50%;
+    border-radius: 7px;
+    border-width: 0px;
+  }
+
+  #export-btn {
+    width: 30%;
+    font-size: 0.3em;
+  }
+
+  #export-icon {
+    width: 2vw;
+    left: 10%;
+    top: 30%;
+  }
+
+  #add-employee-btn {
+    position: relative;
+    border-radius: 7px;
+    border-width: 0px;
+    width: 40%;
+    margin-left: 8%;
+    font-size: 0.3em;
+    background-color: rgb(255, 88, 88);
+    color: white;
+    font-weight: 200;
+  }
+
+  #add-employee-icon {
+    position: absolute;
+    width: 2vw;
+    left: 2%;
+    top: 32%;
+  }
+
+  .search-by-letter {
+    height: 4vh;
+    width: 3vw;
+    border-radius: 3px;
+  }
+
+  #delete-operation-btn {
+    position: absolute;
+    left: 8%;
+    margin-left: 2%;
+    margin-top: 1%;
+    width: 8vw;
+    height: 60%;
+    background-color: rgb(255, 142, 142);
+    color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: red;
+    font-size: 1.2vw;
+  }
+
+  #employee-data-table #table-operations #arrow-left-down-img {
+    position: absolute;
+    width: 3vw;
+    top: 25%;
+    left: 5%;
+  }
+
+  #employee-data-table #table-operations #add-operation-img {
+    position: absolute;
+    width: 3vw;
+    top: 20%;
+    right: 3%;
+  }
+
+  .employee-filter-categories {
+    height: 7vh;
+    margin-bottom: 8%;
+  }
+
+  .filter-categories {
+    display: flex;
+    position: relative;
+    height: 72%;
+    border-radius: 7px;
+    margin-top: 4%;
+    margin-left: 2%;
+    background-color: rgb(255 227 227);
+  }
+
+  .filter-categories p {
+    color: rgb(255, 88, 88);
+    margin-left: 2%;
+    margin-top: 2%;
+    font-size: 2vw;
+  }
+
+  #dropdown-options {
+    width: 151%;
+    margin-bottom: 1%;
+  }
+  #dropdown-options select {
+    position: absolute;
+    top: 1%;
+    box-sizing: border-box;
+    height: 65%;
+    border-radius: 7px;
+    border-color: red;
+    font-size: 2vw;
+  }
+
+  #status-dropdown {
+    width: 23%;
+    left: 2%;
+  }
+
+  #location-dropdown {
+    width: 26%;
+    left: 4%;
+  }
+
+  #department-dropdown {
+    left: 3%;
+    width: 30%;
+  }
+
+  .employee-filter-btn-container {
+    display: flex;
+    margin-left: 1%;
+    padding-left: 15%;
+    width: 30%;
+  }
+
+  #reset,
+  #apply {
+    height: 50%;
+    width: 40%;
+    margin-top: 10%;
+    border-radius: 5px;
+    border-width: 0px;
+    font-size: 2vw;
+  }
+
+  #reset {
+    color: rgb(255, 88, 88);
+    background-color: white;
+    border-width: 1px;
+    border-color: red;
+  }
+  #apply {
+    margin-left: 5%;
+    background-color: rgb(255, 88, 88);
+    color: white;
+  }
+
+  #employee-data-table #table-operations {
+    position: relative;
+    margin-top: 2%;
+    height: 5vh;
+    margin-left: 2%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    box-shadow: 2px 0px 10px rgb(202, 202, 202);
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  #view-all-employee {
+    margin-top: 2em;
+    margin-left: 6em;
+    margin-bottom: 0;
+  }
+  #view-all-employee p {
+    white-space: nowrap;
+    font-size: 0.7em;
+  }
+}
